@@ -2,6 +2,24 @@
 #FONTS
 \*------------------------------------*/
 
+@font-face {
+    font-family: "Inter-UI";
+    font-weight: 400;
+    src: url("../fonts/Inter-UI-Regular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Inter-UI";
+    font-weight: 600;
+    src: url("../fonts/Inter-UI-Medium.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Inter-UI";
+    font-weight: 800;
+    src: url("../fonts/Inter-UI-Bold.woff2") format('woff2');
+}
+
 /*------------------------------------*\
 #Variables
 \*------------------------------------*/
@@ -25,7 +43,7 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: Helvetica, arial, sans-serif;
+    font-family: 'Inter-UI', arial, sans-serif;
     color: #20223a;
     background-color: #F5F6FA;
     box-sizing: border-box;
