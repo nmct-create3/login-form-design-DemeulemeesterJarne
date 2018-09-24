@@ -191,6 +191,10 @@ a:focus {
     color: #2E77E6;
 }
 
+input, label {
+    display: block;
+}
+
 /*------------------------------------*\
 #OBJECTS
 \*------------------------------------*/
@@ -486,6 +490,11 @@ a:focus {
     Everything form related here
 */
 
+.c-form-field--option {
+    display: flex;
+    align-items: center;
+}
+
 /*
     Component: Input
     ---
@@ -493,7 +502,17 @@ a:focus {
 */
 
 .c-input {
-
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    border: #E2E3E7 solid 1px;
+    border-radius: 4px;
+    font-family: 'Inter-UI';
+    color: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 11px 16px;
 }
 
 .c-input:focus {
