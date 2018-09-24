@@ -26,7 +26,8 @@ html {
     font-size: 16px;
     line-height: 1.5;
     font-family: Helvetica, arial, sans-serif;
-    color: grey;
+    color: #20223a;
+    background-color: #F5F6FA;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -47,13 +48,13 @@ html {
 */
 
 ::-moz-selection {
-    background: HotPink;
+    background: #3385FF;
     color: white;
     text-shadow: none;
 }
 
 ::selection {
-    background: HotPink;
+    background: #3385FF;
     color: white;
     text-shadow: none;
 }
@@ -158,18 +159,18 @@ hr {
 }
 
 a {
-    color: HotPink;
+    color: #3385FF;
     transition: all .1s ease-in-out;
 }
 
 a:visited,
 a:active {
-    color: HotPink;
+    color: #2E77E6;
 }
 
 a:hover,
 a:focus {
-    color: DeepPink;
+    color: #2E77E6;
 }
 
 /*------------------------------------*\
