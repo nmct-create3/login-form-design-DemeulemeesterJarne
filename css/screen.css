@@ -513,9 +513,13 @@ input, label {
     font-size: 16px;
     line-height: 24px;
     padding: 11px 16px;
+    outline: none;
 }
 
 .c-input:focus {
+    border-color: #81ADF0;
+    border-radius: 3px;
+    box-shadow: 0 0 0 3px #DCEAFF;
 }
 
 /*
