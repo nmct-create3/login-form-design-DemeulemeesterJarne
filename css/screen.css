@@ -598,19 +598,30 @@ input, label {
 */
 
 .c-button {
-
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 600;
+    width: 100%;
+    color: white;
+    background-color: #3385FF;
+    border: #2E77E6 solid 1px;
+    border-radius: 3px;
+    padding: 12px;
+    outline: none;
 }
 
 .c-button:hover {
-
+    background-color: #2E77E6;
 }
 
 .c-button:focus {
-
+    border-color: #81ADF0;
+    border-radius: 3px;
+    box-shadow: 0 0 0 3px #DCEAFF;
 }
 
 .c-button:active {
-
+    background-color: #245DB3;
 }
 
 .c-button--block {
