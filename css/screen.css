@@ -66,7 +66,7 @@ html {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: white;
+    background-color: var(--color-neutral-xxxx-light);
 }
 
 *,
@@ -500,6 +500,42 @@ input, label {
     ---
     Card with box shadow
 */
+
+.c-card {
+    background-color: white;
+    border: rgba(0,0,0,0.05) 1px solid;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.07);
+}
+
+.c-card__body {
+    padding: 48px 48px 24px 48px;
+}
+
+.c-card__title {
+    margin-bottom: 48px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+}
+
+.c-card__footer {
+    border-top: var(--color-neutral-xxx-light) 1px solid;
+    padding-top: 24px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media (max-width: 576px) {
+    .c-card__title {
+        margin-bottom: 24px;
+    }
+    .c-card__body {
+        padding: 24px;
+    }
+}
 
 /*
     Component: Forms
