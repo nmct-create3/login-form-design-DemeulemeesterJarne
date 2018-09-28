@@ -25,7 +25,24 @@
 \*------------------------------------*/
 
 :root {
-
+    --color-primary-xx-light: #DCEAFF;
+    --color-primary-x-light: #81ADF0;
+    --color-primary-light: #4F95FF;
+    --color-primary: #3385FF;
+    --color-primary-dark: #2E77E6;
+    --color-primary-x-dark: #245DB3;
+    --color-primary-xx-dark: #1B4186;
+    --color-neutral-xxxx-light: #F5F6FA;
+    --color-neutral-xxx-light: #E2E3E7;
+    --color-neutral-xx-light: #CACCD4;
+    --color-neutral-x-light: #B5B6C0;
+    --color-neutral-light: #A0A1AD;
+    --color-neutral: #8B8C9A;
+    --color-neutral-dark: #757787;
+    --color-neutral-x-dark: #606274;
+    --color-neutral-xx-dark: #4B4C60;
+    --color-neutral-xxx-dark: #35374D;
+    --color-neutral-xxxx-dark: #20223A;
 }
 
 /* CSS variables here */
@@ -44,8 +61,8 @@ html {
     font-size: 16px;
     line-height: 1.5;
     font-family: 'Inter-UI', Helvetica, arial, sans-serif;
-    color: #20223a;
-    background-color: #F5F6FA;
+    color: var(--color-neutral-xxxx-dark);
+    background-color: var(--color-neutral-xxxx-light);
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -66,13 +83,13 @@ html {
 */
 
 ::-moz-selection {
-    background: #3385FF;
+    background: var(--color-primary);
     color: white;
     text-shadow: none;
 }
 
 ::selection {
-    background: #3385FF;
+    background: var(--color-primary);
     color: white;
     text-shadow: none;
 }
@@ -177,18 +194,18 @@ hr {
 }
 
 a {
-    color: #3385FF;
+    color: var(--color-primary);
     transition: all .1s ease-in-out;
 }
 
 a:visited,
 a:active {
-    color: #2E77E6;
+    color: var(--color-primary-dark);
 }
 
 a:hover,
 a:focus {
-    color: #2E77E6;
+    color: var(--color-primary-dark);
 }
 
 input, label {
@@ -467,18 +484,18 @@ input, label {
 }
 
 .c-logo__path--1 {
-    fill: #20223A;
+    fill: var(--color-neutral-xxxx-dark);
 }
 
 .c-logo__path--2 {
-    fill: #3385FF;
+    fill: var(--color-primary);
 }
 
 .c-logo__path--3 {
-    fill: #1B4186;
+    fill: var(--color-primary-xx-dark);
 }
 
-/* well hello
+/* 
     Component: Card
     ---
     Card with box shadow
@@ -506,9 +523,9 @@ input, label {
     -moz-appearance: none;
     appearance: none;
     width: 100%;
-    border: #E2E3E7 solid 1px;
+    border: var(--color-neutral-xxx-light) solid 1px;
     border-radius: 4px;
-    font-family: 'Inter-UI';
+    font-family: inherit;
     color: inherit;
     font-size: 16px;
     line-height: 24px;
@@ -517,9 +534,9 @@ input, label {
 }
 
 .c-input:focus {
-    border-color: #81ADF0;
+    border-color: var(--color-primary-x-light);
     border-radius: 3px;
-    box-shadow: 0 0 0 3px #DCEAFF;
+    box-shadow: 0 0 0 3px var(--color-primary-xx-light);
 }
 
 /*
@@ -603,25 +620,24 @@ input, label {
     font-weight: 600;
     width: 100%;
     color: white;
-    background-color: #3385FF;
-    border: #2E77E6 solid 1px;
+    background-color: var(--color-primary);
+    border: var(--color-primary-dark) solid 1px;
     border-radius: 3px;
     padding: 12px;
     outline: none;
 }
 
 .c-button:hover {
-    background-color: #2E77E6;
+    background-color: var(--color-primary-dark);
 }
 
 .c-button:focus {
-    border-color: #81ADF0;
-    border-radius: 3px;
-    box-shadow: 0 0 0 3px #DCEAFF;
+    border-color: var(--color-primary-x-light);
+    box-shadow: 0 0 0 3px var(--color-primary-xx-light);
 }
 
 .c-button:active {
-    background-color: #245DB3;
+    background-color: var(--color-primary-x-dark);
 }
 
 .c-button--block {
